@@ -1,16 +1,52 @@
-# React + Vite
+# 📦 Product Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern Product Management System built using React and Firebase. It allows administrators to manage products with authentication, CRUD operations, and a responsive user interface.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🔗 https://product-management-system-omega.vercel.app/
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 🔐 Firebase Authentication
+- 📦 Product Management (Add, Edit, Delete, View)
+- 📄 Product Details Page
+- 📬 Contact Form (Messages stored in Firebase Firestore)
+- 📱 Responsive Design
+- ☁️ Firebase Firestore Database
+- 🚀 Deployed on Vercel
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React.js
+- React Router DOM
+- Context API
+- Firebase Authentication
+- Firebase Firestore
+- Firebase Storage
+- React Hot Toast
+- CSS
+- Vercel
+
+## 🔑 Demo Login
+
+Use the following credentials to access the admin dashboard.
+
+**Email**
+```text
+admin@gmail.com
+```
+
+**Password**
+```text
+admin123
+```
+
+## ⚙️ Installation
+
+```bash
+git clone https://github.com/your-username/product-management-system.git
+cd product-management-system
+npm install
+npm run dev
+```
