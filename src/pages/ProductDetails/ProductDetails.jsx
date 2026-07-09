@@ -10,8 +10,17 @@ function ProductDetails() {
     const { products } = useContext(ProductContext);
 
     const product = products.find(
-        (item) => item.id === Number(id)
+    (item) => item.id === id
     );
+
+    // Wait for Firestore to load products
+    if (products.length === 0) {
+        return (
+            <section className="product-details-page">
+                <h2>Loading...</h2>
+            </section>
+        );
+    }
 
     if (!product) {
 
