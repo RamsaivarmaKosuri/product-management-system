@@ -1,0 +1,141 @@
+/* Navbar Container */
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 60px;
+    background:#fff;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+/* Logo */
+.logo{
+    color:#2563eb;
+    font-size:28px;
+    font-weight:700;
+    cursor:pointer;
+}
+
+/* Navigation Links */
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:35px;
+    align-items:center;
+}
+
+/* Links */
+.nav-links a{
+    text-decoration:none;
+    color:#333;
+    font-size:18px;
+    font-weight:500;
+    transition:.3s;
+}
+
+/* Hover */
+.nav-links a:hover{
+    color:#2563eb;
+}
+
+/* Active */
+.nav-links a.active{
+    color:#2563eb;
+    font-weight:700;
+}
+
+/* Login Button */
+.login-btn{
+    background:#2563eb;
+    color:#fff;
+    border:none;
+    padding:10px 22px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+.login-btn:hover{
+    background:#1d4ed8;
+    transform:translateY(-2px);
+}
+
+/* ========================= */
+/* Tablet */
+/* ========================= */
+
+@media(max-width:992px){
+
+    .navbar{
+        padding:16px 30px;
+    }
+
+    .logo{
+        font-size:24px;
+    }
+
+    .nav-links{
+        gap:20px;
+    }
+
+    .nav-links a{
+        font-size:16px;
+    }
+
+}
+
+/* ========================= */
+/* Mobile */
+/* ========================= */
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        gap:18px;
+        padding:20px;
+    }
+
+    .nav-links{
+        width:100%;
+        justify-content:center;
+        flex-wrap:wrap;
+        gap:15px;
+    }
+
+    .login-btn{
+        width:100%;
+        max-width:220px;
+    }
+
+}
+
+/* ========================= */
+/* Small Mobile */
+/* ========================= */
+
+@media(max-width:480px){
+
+    .logo{
+        font-size:22px;
+        text-align:center;
+    }
+
+    .nav-links{
+        flex-direction:column;
+        gap:12px;
+    }
+
+    .nav-links a{
+        font-size:15px;
+    }
+
+    .login-btn{
+        width:100%;
+    }
+
+}

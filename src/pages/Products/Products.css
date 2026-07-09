@@ -1,0 +1,223 @@
+/* =====================================
+   Products Page
+===================================== */
+
+.products-page{
+
+    padding: 50px 80px;
+
+    background: #f8fafc;
+
+    min-height: 100vh;
+
+}
+
+
+/* =====================================
+   Products Header
+===================================== */
+
+.products-header{
+
+    text-align: center;
+
+    margin-bottom: 50px;
+
+}
+
+.products-title{
+
+    font-size: 48px;
+
+    font-weight: 700;
+
+    color: #1f2937;
+
+    margin-bottom: 15px;
+
+}
+
+.products-description{
+
+    font-size: 18px;
+
+    color: #6b7280;
+
+    max-width: 650px;
+
+    margin: auto;
+
+    line-height: 1.8;
+
+}
+
+
+/* =====================================
+   Search & Filter
+===================================== */
+
+.products-toolbar{
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+    margin-bottom: 50px;
+
+}
+
+.search-input{
+
+    width: 350px;
+
+    padding: 14px 18px;
+
+    font-size: 16px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 10px;
+
+    outline: none;
+
+    transition: 0.3s;
+
+}
+
+.search-input:focus{
+
+    border-color: #2563eb;
+
+    box-shadow: 0 0 10px rgba(37,99,235,0.2);
+
+}
+
+.category-select,
+.sort-select{
+
+    padding: 14px 18px;
+
+    font-size: 16px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 10px;
+
+    outline: none;
+
+    cursor: pointer;
+
+    background: white;
+
+    transition: 0.3s;
+
+}
+
+.category-select:focus,
+.sort-select:focus{
+
+    border-color: #2563eb;
+
+}
+
+
+/* =====================================
+   Products Grid
+===================================== */
+
+.products-grid{
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 35px;
+
+    flex-wrap: wrap;
+
+}
+
+/* =====================================
+   Responsive Design
+===================================== */
+
+@media (max-width:992px){
+
+    .products-page{
+        padding:40px;
+    }
+
+    .products-title{
+        font-size:40px;
+    }
+
+    .products-description{
+        font-size:17px;
+    }
+
+    .search-input{
+        width:300px;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .products-page{
+        padding:30px 20px;
+    }
+
+    .products-title{
+        font-size:34px;
+    }
+
+    .products-description{
+        font-size:16px;
+    }
+
+    .products-toolbar{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .search-input,
+    .category-select,
+    .sort-select{
+        width:100%;
+        max-width:400px;
+    }
+
+    .products-grid{
+        gap:25px;
+    }
+
+}
+
+@media (max-width:480px){
+
+    .products-page{
+        padding:25px 15px;
+    }
+
+    .products-title{
+        font-size:28px;
+    }
+
+    .products-description{
+        font-size:15px;
+    }
+
+    .search-input,
+    .category-select,
+    .sort-select{
+        font-size:15px;
+        padding:12px 15px;
+    }
+
+}

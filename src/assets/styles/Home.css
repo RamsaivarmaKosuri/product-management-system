@@ -1,0 +1,505 @@
+/* =====================================
+   Home Page
+===================================== */
+
+
+/* Home Section */
+
+.home-page{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    min-height: calc(100vh - 80px);
+
+    padding: 30px 80px 60px;
+
+    background: linear-gradient(
+        135deg,
+        #f8fafc 0%,
+        #eef5ff 100%
+    );
+}
+
+
+/* Left Side */
+
+.home-content{
+    width: 50%;
+    max-width: 600px;
+}
+
+
+/* Small Heading */
+
+.small-heading{
+    color: #2563eb;
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    margin-bottom: 15px;
+}
+
+
+/* Main Heading */
+
+.main-heading{
+
+    font-size: 64px;
+
+    font-weight: 700;
+
+    color: #1f2937;
+
+    margin-bottom: 25px;
+
+    line-height: 1.2;
+
+    letter-spacing: -1px;
+}
+
+
+/* Description */
+
+.description-text{
+
+    font-size: 20px;
+
+    color: #6b7280;
+
+    line-height: 1.8;
+
+    margin-bottom: 40px;
+}
+
+
+/* Buttons */
+
+.button-container{
+
+    display: flex;
+
+    gap: 20px;
+}
+
+
+/* Explore Button */
+
+.explore-button{
+
+    background-color: #2563eb;
+
+    color: white;
+
+    border: none;
+
+    padding: 14px 30px;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+
+    box-shadow: 0 8px 20px rgba(37,99,235,0.30);
+
+}
+
+.explore-button:hover{
+
+    background-color: #1d4ed8;
+
+    transform: translateY(-4px);
+
+}
+
+
+/* Login Button */
+
+.login-button{
+
+    background-color: white;
+
+    color: #2563eb;
+
+    border: 2px solid #2563eb;
+
+    padding: 14px 30px;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+
+}
+
+.login-button:hover{
+
+    background-color: #2563eb;
+
+    color: white;
+
+    transform: translateY(-4px);
+
+}
+
+
+/* Image */
+
+.image-container{
+
+    width: 45%;
+
+}
+
+.home-image{
+
+    width: 100%;
+
+    filter: drop-shadow(0 20px 35px rgba(37,99,235,0.18));
+
+    transition: transform 0.4s ease;
+
+}
+
+.home-image:hover{
+
+    transform: translateY(-10px);
+
+}
+
+
+/* =====================================
+   Statistics Section
+===================================== */
+
+.statistics-section{
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+
+    padding: 40px 80px 80px;
+
+    background: linear-gradient(
+        135deg,
+        #eef5ff 0%,
+        #f8fafc 100%
+    );
+
+}
+
+
+/* =====================================
+   Featured Products Section
+===================================== */
+
+.featured-products-section{
+
+    padding: 80px;
+
+    background: #ffffff;
+
+}
+
+.section-title{
+
+    text-align: center;
+
+    font-size: 42px;
+
+    font-weight: 700;
+
+    color: #1f2937;
+
+    margin-bottom: 15px;
+
+}
+
+.section-description{
+
+    text-align: center;
+
+    color: #6b7280;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    max-width: 700px;
+
+    margin: 0 auto 50px;
+
+}
+
+.products-container{
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: stretch;
+
+    gap: 35px;
+
+    flex-wrap: wrap;
+
+}
+
+
+/* =====================================
+   Why Choose Us Section
+===================================== */
+
+.features-section{
+
+    padding: 80px;
+
+    background: linear-gradient(
+        135deg,
+        #f8fafc 0%,
+        #eef5ff 100%
+    );
+
+}
+
+.features-container{
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: stretch;
+
+    gap: 35px;
+
+    flex-wrap: wrap;
+
+}
+
+/* =====================================
+   Call To Action Section
+===================================== */
+
+.cta-section{
+
+    padding: 90px 40px;
+
+    text-align: center;
+
+    background: linear-gradient(
+        135deg,
+        #2563eb 0%,
+        #1d4ed8 100%
+    );
+
+}
+
+.cta-title{
+
+    color: white;
+
+    font-size: 46px;
+
+    font-weight: 700;
+
+    margin-bottom: 20px;
+
+}
+
+.cta-description{
+
+    color: #dbeafe;
+
+    font-size: 20px;
+
+    max-width: 700px;
+
+    margin: 0 auto 40px;
+
+    line-height: 1.8;
+
+}
+
+.cta-button{
+
+    background: white;
+
+    color: #2563eb;
+
+    border: none;
+
+    padding: 16px 40px;
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+
+}
+
+.cta-button:hover{
+
+    transform: translateY(-5px);
+
+    background: #f8fafc;
+
+}
+
+/* =====================================
+   Responsive Design
+===================================== */
+
+@media (max-width:992px){
+
+    .home-page{
+        flex-direction:column-reverse;
+        text-align:center;
+        padding:40px;
+        gap:40px;
+    }
+
+    .home-content,
+    .image-container{
+        width:100%;
+        max-width:100%;
+    }
+
+    .main-heading{
+        font-size:48px;
+    }
+
+    .description-text{
+        font-size:18px;
+    }
+
+    .button-container{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    .featured-products-section,
+    .features-section{
+        padding:60px 40px;
+    }
+
+    .statistics-section{
+        padding:40px;
+    }
+
+    .section-title{
+        font-size:36px;
+    }
+
+    .cta-title{
+        font-size:38px;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .home-page{
+        padding:30px 20px;
+    }
+
+    .main-heading{
+        font-size:38px;
+    }
+
+    .description-text{
+        font-size:16px;
+    }
+
+    .button-container{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .explore-button,
+    .login-button{
+        width:100%;
+        max-width:260px;
+    }
+
+    .featured-products-section,
+    .features-section{
+        padding:50px 20px;
+    }
+
+    .statistics-section{
+        padding:30px 20px;
+    }
+
+    .section-title{
+        font-size:30px;
+    }
+
+    .section-description{
+        font-size:16px;
+    }
+
+    .cta-section{
+        padding:60px 20px;
+    }
+
+    .cta-title{
+        font-size:30px;
+    }
+
+    .cta-description{
+        font-size:16px;
+    }
+
+}
+
+@media (max-width:480px){
+
+    .small-heading{
+        font-size:16px;
+    }
+
+    .main-heading{
+        font-size:30px;
+    }
+
+    .description-text{
+        font-size:15px;
+    }
+
+    .section-title{
+        font-size:26px;
+    }
+
+    .cta-title{
+        font-size:26px;
+    }
+
+    .cta-button{
+        width:100%;
+        max-width:260px;
+    }
+
+}

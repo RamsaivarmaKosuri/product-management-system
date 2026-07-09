@@ -1,0 +1,253 @@
+/* =====================================
+   Dashboard Page
+===================================== */
+
+
+.dashboard-page{
+
+    padding:50px 80px;
+
+    background:#f8fafc;
+
+    min-height:100vh;
+
+}
+
+
+/* Header */
+
+.dashboard-header{
+
+    margin-bottom:40px;
+
+}
+
+
+.dashboard-header h1{
+
+    font-size:38px;
+
+    color:#1f2937;
+
+    margin-bottom:10px;
+
+}
+
+
+.dashboard-header p{
+
+    color:#6b7280;
+
+    font-size:18px;
+
+}
+
+
+
+/* Statistics */
+
+.dashboard-stats{
+
+    display:flex;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:50px;
+
+}
+
+
+
+/* Quick Actions */
+
+.quick-actions{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    margin-bottom:40px;
+
+}
+
+
+.quick-actions h2{
+
+    margin-bottom:20px;
+
+    color:#1f2937;
+
+}
+
+
+.action-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+
+.action-buttons button{
+
+    padding:14px 25px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#2563eb;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+}
+
+
+.action-buttons button:hover{
+
+    background:#1d4ed8;
+
+}
+
+/* Recent Products */
+
+.recent-products{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:18px;
+
+}
+
+
+.recent-products h2{
+
+    margin-bottom:20px;
+
+}
+
+
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+
+th,
+td{
+
+    padding:15px;
+
+    text-align:left;
+
+    border-bottom:1px solid #e5e7eb;
+
+}
+
+
+th{
+
+    color:#2563eb;
+
+}
+
+/* =====================================
+   Responsive Design
+===================================== */
+
+@media (max-width:992px){
+
+    .dashboard-page{
+        padding:40px;
+    }
+
+    .dashboard-header h1{
+        font-size:34px;
+    }
+
+    .dashboard-header p{
+        font-size:17px;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .dashboard-page{
+        padding:30px 20px;
+    }
+
+    .dashboard-header{
+        text-align:center;
+    }
+
+    .dashboard-header h1{
+        font-size:30px;
+    }
+
+    .dashboard-header p{
+        font-size:16px;
+    }
+
+    .dashboard-stats{
+        justify-content:center;
+    }
+
+    .action-buttons{
+        flex-direction:column;
+    }
+
+    .action-buttons button{
+        width:100%;
+    }
+
+    .recent-products{
+        overflow-x:auto;
+    }
+
+    table{
+        min-width:650px;
+    }
+
+}
+
+@media (max-width:480px){
+
+    .dashboard-page{
+        padding:20px 15px;
+    }
+
+    .dashboard-header h1{
+        font-size:26px;
+    }
+
+    .dashboard-header p{
+        font-size:15px;
+    }
+
+    .quick-actions,
+    .recent-products{
+        padding:20px;
+    }
+
+    .action-buttons button{
+        font-size:15px;
+        padding:12px;
+    }
+
+}

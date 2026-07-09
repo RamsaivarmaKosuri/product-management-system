@@ -1,0 +1,190 @@
+/* =====================================
+   Product Details Page
+===================================== */
+
+.product-details-page{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:50px 80px;
+    background:#f8fafc;
+}
+
+/* =====================================
+   Product Card
+===================================== */
+
+.product-details-card{
+    width:100%;
+    max-width:1100px;
+    background:#ffffff;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    padding:40px;
+    display:flex;
+    gap:40px;
+    align-items:center;
+}
+
+/* =====================================
+   Image Section
+===================================== */
+
+.product-image-section{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.details-image{
+    width:100%;
+    max-width:450px;
+    border-radius:15px;
+    object-fit:cover;
+    box-shadow:0 8px 25px rgba(0,0,0,0.12);
+    transition:0.3s;
+}
+
+.details-image:hover{
+    transform:scale(1.03);
+}
+
+/* =====================================
+   Product Info
+===================================== */
+
+.product-info-section{
+    flex:1;
+}
+
+.product-info-section h1{
+    font-size:38px;
+    color:#1f2937;
+    margin-bottom:20px;
+}
+
+.product-info-section p{
+    font-size:17px;
+    color:#4b5563;
+    margin-bottom:15px;
+    line-height:1.7;
+}
+
+/* =====================================
+   Buttons
+===================================== */
+
+.details-buttons{
+    display:flex;
+    gap:15px;
+    margin-top:30px;
+}
+
+.back-button,
+.edit-button{
+    padding:14px 24px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.back-button{
+    background:#6b7280;
+    color:#ffffff;
+}
+
+.back-button:hover{
+    background:#4b5563;
+}
+
+.edit-button{
+    background:#2563eb;
+    color:#ffffff;
+}
+
+.edit-button:hover{
+    background:#1d4ed8;
+}
+
+/* =====================================
+   Responsive Design
+===================================== */
+
+@media (max-width:992px){
+
+    .product-details-page{
+        padding:40px;
+    }
+
+    .product-details-card{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .details-buttons{
+        justify-content:center;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .product-details-page{
+        padding:30px 20px;
+    }
+
+    .product-details-card{
+        padding:25px;
+    }
+
+    .product-info-section h1{
+        font-size:30px;
+    }
+
+    .product-info-section p{
+        font-size:16px;
+    }
+
+    .details-image{
+        max-width:320px;
+    }
+
+    .details-buttons{
+        flex-direction:column;
+    }
+
+    .back-button,
+    .edit-button{
+        width:100%;
+    }
+
+}
+
+@media (max-width:480px){
+
+    .product-details-page{
+        padding:20px 15px;
+    }
+
+    .product-details-card{
+        padding:20px;
+    }
+
+    .product-info-section h1{
+        font-size:26px;
+    }
+
+    .product-info-section p{
+        font-size:15px;
+    }
+
+    .details-image{
+        max-width:260px;
+    }
+
+}

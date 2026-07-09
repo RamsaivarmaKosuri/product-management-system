@@ -1,0 +1,209 @@
+.edit-product-page{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:50px;
+
+    background:#f8fafc;
+
+}
+
+.edit-product-card{
+
+    width:600px;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:18px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+
+}
+
+.edit-product-title{
+
+    text-align:center;
+
+    font-size:32px;
+
+    color:#1f2937;
+
+    margin-bottom:30px;
+
+}
+
+.product-form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+}
+
+.form-group label{
+
+    font-weight:600;
+
+    color:#374151;
+
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+
+    padding:12px;
+
+    border:1px solid #d1d5db;
+
+    border-radius:8px;
+
+    font-size:16px;
+
+}
+
+.form-row{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+.form-row .form-group{
+
+    width:50%;
+
+}
+
+
+.edit-product-button{
+
+    padding:14px;
+
+    background:#2563eb;
+
+    color:white;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+}
+
+.edit-product-button:hover{
+
+    background:#1d4ed8;
+
+}
+
+.form-error{
+
+    color:red;
+
+    text-align:center;
+
+    font-weight:600;
+
+    margin-bottom:15px;
+
+}
+
+/* =====================================
+   Responsive Design
+===================================== */
+
+@media (max-width:992px){
+
+    .edit-product-page{
+        padding:40px;
+    }
+
+    .edit-product-card{
+        width:100%;
+        max-width:650px;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .edit-product-page{
+        padding:30px 20px;
+    }
+
+    .edit-product-card{
+        width:100%;
+        padding:25px;
+    }
+
+    .edit-product-title{
+        font-size:28px;
+    }
+
+    .form-row{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .form-row .form-group{
+        width:100%;
+    }
+
+    .edit-product-button{
+        width:100%;
+    }
+
+}
+
+@media (max-width:480px){
+
+    .edit-product-page{
+        padding:20px 15px;
+    }
+
+    .edit-product-card{
+        padding:20px;
+    }
+
+    .edit-product-title{
+        font-size:24px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea{
+        font-size:15px;
+        padding:12px;
+    }
+
+    .edit-product-button{
+        font-size:15px;
+        padding:13px;
+    }
+
+}
